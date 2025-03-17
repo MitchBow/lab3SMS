@@ -20,15 +20,22 @@ export default function HomeScreen() {
   const { result } = await SMS.sendSMSAsync(
     id,
     'LA Beast is king',
-    {
+/*     {
       attachments: {
         uri: 'https://upload.wikimedia.org/wikipedia/commons/5/58/Mvf%40_L.A._Beast.jpg',
         mimeType: 'image/png',
         filename: 'myfile.png',
       },
-    }
+    }*/
   );
-}
+  if (result === 'sent'){
+    alert("SENT");
+  } else {
+    alert("ERROR: random crazy error")
+  }
+} 
+
+
 
 return (
   <View style = {styles.header}>
