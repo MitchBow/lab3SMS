@@ -19,7 +19,7 @@ export default function HomeScreen() {
   async function _handlePressButtonAsync(){
   const { result } = await SMS.sendSMSAsync(
     id,
-    'Mitchell is king',
+    'LA Beast is king',
     {
       attachments: {
         uri: 'https://upload.wikimedia.org/wikipedia/commons/5/58/Mvf%40_L.A._Beast.jpg',
