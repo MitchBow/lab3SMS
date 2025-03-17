@@ -1,5 +1,6 @@
 import { Image, StyleSheet, View, Platform, Alert, Button } from 'react-native';
 import * as SMS from 'expo-sms';
+import {Link} from 'expo-router';
 
 export default function HomeScreen() {
 
@@ -44,6 +45,9 @@ return (
         title = "SEND"
         onPress = {()=>askToSend()}
         />
+      <Link href="./contacts" asChild>
+        <Button title="Contacts"></Button>
+      </Link>
     </View>
   </View>
 );
